@@ -95,7 +95,7 @@ body
   margin: 0;
   padding: 0;
   background: white;
-  font-family:gilroy,Helvetica,Roboto,Arial,sans-serif;
+  font-family:gilroy,'Montserrat',Arial,sans-serif;
     font-weight:400;
   line-height:1.5;
 
@@ -337,12 +337,14 @@ d8888b.  .d88b.  d8888b. d888888b d88888b  .d88b.  db      d888888b  .d88b.  .d8
       font-size: 2em;
       font-weight: bold;
       line-height: 1.5;
+	font-family:'Gilroy','Montserrat',Arial,sans-serif;
     }
 
 
 #porfolio {
   margin-top: 5vh;
   margin-bottom: 10vh;
+font-family:'Gilroy','Montserrat',Arial,sans-serif;
 }
 
 
@@ -355,7 +357,7 @@ d8888b.  .d88b.  d8888b. d888888b d88888b  .d88b.  db      d888888b  .d88b.  .d8
 
 h1{
 	color: black;
-	font-family: 'gilroy', sans-serif;
+	font-family:'Gilroy','Montserrat',Arial,sans-serif;
   font-weight: bold;
 	height: 100px;
 	font-size: 4em;
@@ -373,6 +375,7 @@ article {
     vertical-align: top;
     margin-bottom: 35px;
     overflow: hidden;
+	font-family:'Gilroy','Montserrat',Arial,sans-serif;
 }
 
 
@@ -500,6 +503,7 @@ figcaption {
       font-size: 2em;
       font-weight: bold;
       line-height: 1.5;
+	font-family:'Gilroy','Montserrat',Arial,sans-serif;
     }
 
 #infocontact a{
@@ -521,7 +525,7 @@ figcaption {
   padding-top: 12vh;
      font-weight:400;
   line-height:1.5;
-
+font-family:'Gilroy','Montserrat',Arial,sans-serif;
 }
 
 #textecontact {
@@ -551,6 +555,7 @@ div section article h4 {
   height: 60vh;
   display: inline-block;
   position: absolute;
+font-family:'Gilroy','Montserrat',Arial,sans-serif;
 }
 
 #articlecompetences {
@@ -640,6 +645,7 @@ footer .footerfixe {
   margin-top: 22vh;
   font-size: 0.9em;
   position: absolute;
+font-family:'Gilroy','Montserrat',Arial,sans-serif;
 }
 
 .contenuprojet:hover {
