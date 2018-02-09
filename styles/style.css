@@ -337,14 +337,14 @@ d8888b.  .d88b.  d8888b. d888888b d88888b  .d88b.  db      d888888b  .d88b.  .d8
       font-size: 2em;
       font-weight: bold;
       line-height: 1.5;
-	font-family:'Gilroy','Montserrat',Arial,sans-serif;
+	font-family:'Gilroy','Montserrat',Arial Black,sans-serif;
     }
 
 
 #porfolio {
   margin-top: 5vh;
   margin-bottom: 10vh;
-font-family:'Gilroy','Montserrat',Arial,sans-serif;
+font-family:'Gilroy','Montserrat',Arial Black,sans-serif;
 }
 
 
@@ -357,8 +357,8 @@ font-family:'Gilroy','Montserrat',Arial,sans-serif;
 
 h1{
 	color: black;
-	font-family:'Gilroy','Montserrat',Arial,sans-serif;
-  font-weight: bold;
+	font-family:'Gilroy','Montserrat',Arial Black,sans-serif;
+  font-weight: black;
 	height: 100px;
 	font-size: 4em;
 	margin-top: -150px;
@@ -419,7 +419,7 @@ article .boitetexte h2 {
     text-decoration: none;
    /* transform: scale(1.1);*/
     transition: all 300ms ease;
-    font-weight: bold;
+    font-weight: black;
   }
 
 
@@ -501,7 +501,7 @@ figcaption {
       height: 200px;
       width: 80%;
       font-size: 2em;
-      font-weight: bold;
+      font-weight: black;
       line-height: 1.5;
 	font-family:'Gilroy','Montserrat',Arial,sans-serif;
     }
@@ -523,7 +523,7 @@ figcaption {
   margin: auto;
   background-color: #ff6969;
   padding-top: 12vh;
-     font-weight:400;
+     font-weight:bold;
   line-height:1.5;
 font-family:'Gilroy','Montserrat',Arial,sans-serif;
 }
@@ -537,7 +537,7 @@ font-family:'Gilroy','Montserrat',Arial,sans-serif;
 
 
 div section  h3 {
-  font-weight: bold;
+  font-weight: black;
   font-size: 2em;
   margin-bottom: 4vh;
 }
@@ -545,7 +545,7 @@ div section  h3 {
     
 
 div section article h4 {
-  font-weight: bold;
+  font-weight: black;
   margin-bottom: 10px;
 
 }
@@ -602,7 +602,7 @@ article p a:hover{
     height:30px;
     font-size: 0.7em;
     text-align:right;
-    font-weight: lighter;
+    font-weight: medium;
     left: -140px;
         
     
@@ -752,7 +752,7 @@ Info particulière à une page*/
 section article p a span {
   color: black;
   transition: color 0.3s ease;
-  font-weight: bold;
+  font-weight: black;
   text-decoration: underline;
 }
 
