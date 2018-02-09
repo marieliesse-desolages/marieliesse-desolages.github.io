@@ -113,7 +113,7 @@ body
   margin: 0;
   padding: 0;
   background: white;
-  font-family: 'gilroyextrabold','Montserrat',Arial,sans-serif;
+  font-family:'gilroyextrabold','Montserrat',Arial,sans-serif;
   line-height:1.5;
 }
 
@@ -228,7 +228,7 @@ a:hover
 {
   position: absolute;
   width: 300px;
-
+  font-family: 'gilroylight','Montserrat',Arial,sans-serif;
   margin: -100px 0 0 -200px;
   padding: 50px;
   padding-top: 125px;
@@ -340,7 +340,7 @@ d8888b.  .d88b.  d8888b. d888888b d88888b  .d88b.  db      d888888b  .d88b.  .d8
 */
 
 #about {
-  width: 70vw;
+  width: 960px;
   margin: auto;
   margin-top: -5vh;
   height: 40vh;
@@ -350,14 +350,14 @@ d8888b.  .d88b.  d8888b. d888888b d88888b  .d88b.  db      d888888b  .d88b.  .d8
 #infocontact2 {
       width: 85%;
       font-size: 2em;
-      font-weight: bold;
+      font-weight: lighter;
       line-height: 1.5;
     }
 
 
 #porfolio {
-  margin-top: 5vh;
-  margin-bottom: 10vh;
+/*  margin-top: 50px;*/
+  margin-bottom: 10px;
 }
 
 
@@ -383,8 +383,8 @@ h2{
 font-family: 'gilroyextrabold','Montserrat',Arial Black,sans-serif;
 }
 
-p{
-font-family: 'gilroylight','Montserrat',Arial Black,sans-serif;
+#porfolio article a div p{
+font-family: 'gilroylight','Montserrat',Arial,sans-serif;
 }
 
 article {
@@ -406,10 +406,15 @@ article {
 
 article a{
     color: white;
+        font-family: 'gilroylight','Montserrat',Arial,sans-serif;
+    font-weight: lighter;
+    transition: color 0.3s ease;
+
 }
 
 article a:hover{
     color: white;
+
 }
 
 .boitetexte{
@@ -576,6 +581,10 @@ div section article h4 {
   position: absolute;
 }
 
+.compétences article p{
+	  font-family: 'gilroylight','Montserrat',Arial,sans-serif;
+}
+
 #articlecompetences {
   width: 16vw;
   position: relative;
@@ -583,7 +592,7 @@ div section article h4 {
 }
 
 #articlecompetences:hover{
-  overflow: scroll;
+/*  overflow: scroll;*/
 }
 
 #articlecompetences2 {
@@ -595,7 +604,7 @@ div section article h4 {
 }
 
 #articlecompetences2:hover{
-  overflow: scroll;
+/*  overflow: scroll;*/
 }
 
 #articleformations{
@@ -607,13 +616,16 @@ div section article h4 {
 }
 
 #articleformations:hover{
-  overflow: scroll;
+ /* overflow: scroll;*/
 }
 
 article p a:hover{
   color: black;
 }
 
+.compétences article p a{
+	  font-family: 'gilroylight','Montserrat',Arial,sans-serif;
+}
 
  footer h5 {
     width: 400px;
@@ -622,6 +634,7 @@ article p a:hover{
     text-align:right;
     font-weight: lighter;
     left: -140px;
+      font-family: 'gilroylight','Montserrat',Arial,sans-serif;
         
     
     -webkit-transform:rotate(-90deg);
@@ -692,7 +705,6 @@ BOUTON PRECEDENT BOUTON PRECEDENT*/
   font-weight: bold;
   left: 7vw;
   position: absolute;
-
 }
 
 nav .projectbottom li{
@@ -781,4 +793,3 @@ section article p a:hover span {
 section article p .bold{
   font-weight: bold;
 }
-
