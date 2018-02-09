@@ -54,6 +54,12 @@ table {
 /***************************** Fin du reset *********************************/
 
 
+/*@font-face{
+  font-family:gilroy;
+  src:url("../fonts/font-face.css");
+  font-weight:400;
+}*/
+
 @font-face {
   font-family: 'gilroyextrabold';
   src: url('../fonts/gilroyextrabold-webfont.woff2') format('woff2'),
@@ -69,6 +75,8 @@ table {
   font-weight: normal;
   font-style: normal;
 }
+
+  /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 html{
   font-family:sans-serif;
@@ -105,11 +113,8 @@ body
   margin: 0;
   padding: 0;
   background: white;
-  font-family:'gilroyextrabold','Montserrat',Arial,sans-serif;
-    font-weight:900;
+  font-family: 'gilroyextrabold','Montserrat',Arial,sans-serif;
   line-height:1.5;
-
-
 }
 
 a
@@ -294,7 +299,6 @@ a:hover
 	width: 980px;
 	margin: auto;
   height: 3420px;
-	font-family: 'gilroyextrabold','Montserrat',Arial Black,sans-serif;
 }
 
 header {
@@ -348,7 +352,6 @@ d8888b.  .d88b.  d8888b. d888888b d88888b  .d88b.  db      d888888b  .d88b.  .d8
       font-size: 2em;
       font-weight: bold;
       line-height: 1.5;
-	font-family:'gilroyextrabold','Montserrat',Arial Black,sans-serif;
     }
 
 
@@ -367,13 +370,21 @@ d8888b.  .d88b.  d8888b. d888888b d88888b  .d88b.  db      d888888b  .d88b.  .d8
 
 h1{
 	color: black;
-	font-family:'gilroyextrabold','Montserrat',Arial Black,sans-serif;
-  font-weight: 800;
+	font-family: 'gilroyextrabold','Montserrat' sans-serif;
+  font-weight: bold;
 	height: 100px;
 	font-size: 4em;
 	margin-top: -150px;
   padding-top: 150px;
   margin-bottom: 100px;
+}
+
+h2{
+font-family: 'gilroyextrabold','Montserrat',Arial Black,sans-serif;
+}
+
+p{
+font-family: 'gilroylight','Montserrat',Arial Black,sans-serif;
 }
 
 article {
@@ -387,15 +398,8 @@ article {
     overflow: hidden;
 }
 
-h2{
-font-family: 'gilroyextrabold','Montserrat',Arial Black,sans-serif;
-	font-weight:900;
-}
 
-p{
-font-family: 'gilroylight','Montserrat',Arial Black,sans-serif;
-font-weight: 400;	
-}
+
 .droite{
   margin-left: 25px;
 }
@@ -435,7 +439,7 @@ article .boitetexte h2 {
     text-decoration: none;
    /* transform: scale(1.1);*/
     transition: all 300ms ease;
-    font-weight: black;
+    font-weight: bold;
   }
 
 
@@ -517,10 +521,8 @@ figcaption {
       height: 200px;
       width: 80%;
       font-size: 2em;
-      font-weight: black;
+      font-weight: bold;
       line-height: 1.5;
-font-family: 'gilroyextrabold','Montserrat',Arial Black,sans-serif;
-
     }
 
 #infocontact a{
@@ -540,9 +542,9 @@ font-family: 'gilroyextrabold','Montserrat',Arial Black,sans-serif;
   margin: auto;
   background-color: #ff6969;
   padding-top: 12vh;
-     font-weight:bold;
+     font-weight:400;
   line-height:1.5;
-font-family:'Gilroy','Montserrat',Arial,sans-serif;
+
 }
 
 #textecontact {
@@ -554,7 +556,7 @@ font-family:'Gilroy','Montserrat',Arial,sans-serif;
 
 
 div section  h3 {
-font-family: 'gilroyextrabold','Montserrat',Arial Black,sans-serif;
+  font-weight: bold;
   font-size: 2em;
   margin-bottom: 4vh;
 }
@@ -562,7 +564,7 @@ font-family: 'gilroyextrabold','Montserrat',Arial Black,sans-serif;
     
 
 div section article h4 {
-  font-family: 'gilroyextrabold','Montserrat',Arial Black,sans-serif;
+  font-weight: bold;
   margin-bottom: 10px;
 
 }
@@ -572,15 +574,12 @@ div section article h4 {
   height: 60vh;
   display: inline-block;
   position: absolute;
-font-family:'Gilroy','Montserrat',Arial,sans-serif;
 }
 
 #articlecompetences {
   width: 16vw;
   position: relative;
   height: 56vh;
-font-weight: 400;	
-font-family: 'gilroylight','Montserrat',Arial,sans-serif;	
 }
 
 #articlecompetences:hover{
@@ -593,8 +592,6 @@ font-family: 'gilroylight','Montserrat',Arial,sans-serif;
   height: 45vh;
   padding-top: 0vh;
   padding-right: 4vw;
-font-weight: 400;	
-font-family: 'gilroylight','Montserrat',Arial,sans-serif;
 }
 
 #articlecompetences2:hover{
@@ -604,8 +601,7 @@ font-family: 'gilroylight','Montserrat',Arial,sans-serif;
 #articleformations{
   width: 28vw;
   height: 70vh;
-  font-weight: 400;	
-font-family: 'gilroylight','Montserrat',Arial,sans-serif;  
+    
   position: absolute;
   left: 55vw;
 }
@@ -624,10 +620,8 @@ article p a:hover{
     height:30px;
     font-size: 0.7em;
     text-align:right;
-    font-weight: medium;
+    font-weight: lighter;
     left: -140px;
-font-weight: 400;	
-font-family: 'gilroylight','Montserrat',Arial,sans-serif;	 
         
     
     -webkit-transform:rotate(-90deg);
@@ -669,8 +663,8 @@ footer .footerfixe {
   margin-top: 22vh;
   font-size: 0.9em;
   position: absolute;
-font-weight: 400;	
-font-family: 'gilroylight','Montserrat',Arial,sans-serif;
+  font-family: 'gilroylight', 'Roboto', Arial, sans-serif;
+}
 
 .contenuprojet:hover {
    overflow: scroll;
@@ -776,7 +770,7 @@ Info particulière à une page*/
 section article p a span {
   color: black;
   transition: color 0.3s ease;
-  font-weight: black;
+  font-weight: bold;
   text-decoration: underline;
 }
 
@@ -787,20 +781,4 @@ section article p a:hover span {
 section article p .bold{
   font-weight: bold;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
