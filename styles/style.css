@@ -678,10 +678,11 @@ footer .footerfixe {
   position: absolute;
   font-family: 'gilroylight', 'Roboto', Arial, sans-serif;
 }
-
+/*
 .contenuprojet:hover {
    overflow: scroll;
 }
+*/
 
 .titreprojet {
   font-weight: bold;
