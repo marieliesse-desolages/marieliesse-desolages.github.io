@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="fr">
+  	<head>
+    		<meta charset="UTF-8">
+    		<title> Stewart Brand </title>
+    		<link rel="stylesheet" href="../styles/style.css">
+    		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    		
+  	</head>
+
+
+	<body>
+    	<div id="conteneur2">
+
+    	<header>
+    			<div id="logo">
+    					<a href="../index.html#porfolio"><img src="../images/marie-liesse_logoblanc.png" alt="Logo Marie-Liesse de Solages"></a>
+    			</div>
+
+    <!-- MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER  -->
+
+
+          			<!--    Made by Erik Terwan    -->
+          <!--   24th of November 2015   -->
+          <!--    All rights reserved    -->
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <a href="../index.html#home" class="js-scrollTo"><li>Home</li></a>
+                <a href="../index.html#about" class="js-scrollTo"><li>About</li></a>
+                <a href="../index.html#porfolio" class="js-scrollTo"><li>Porfolio</li></a>
+                <a href="../index.html#contact" class="js-scrollTo"><li>Contact</li></a>
+              </ul>
+            </div>
+          </nav>
+
+    <!-- MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER  -->
+
+
+
+    	 </header>
+
+     <!--:::::::::::::::::::::::::::::::::::::::::::::::
+::::::: BOUTONS PROJETS PRÉCÉDENT & SUIVANT :::::::
+::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+<!-- BOUTON PROJET PRÉCÉDENT -->
+<!-- <section id="previous-project">
+  <div id="previous-project-link">
+    <a href="portraitchinois.html">projet précedent</a>
+  </div>
+</section>   -->
+ 
+<nav>
+  <ul class="projectbottom">
+    <a href="paysage-interieur.html"><li class="pastproject"> projet précédent </li></a>
+      <a href="portraitchinois.html" class="nextproject"><li > projet suivant </li></a>
+  </ul>
+</nav>
+
+
+ 
+    <section>   	
+
+          <article class="contenuprojet">
+            <h3 class="titreprojet">
+              Site Fred Turner
+            </h3> 
+
+            <p>
+                    
+                Décembre 2017 - Site Web sur la préface de Fred Turner : Aux sources de l’utopie numérique <br><br>
+
+                A la manière de Fritz Khan, l’idée est de démystifier, de décomplexifier l’histoire d’internet. Pour la comprendre, c’est simple, il suffit de suive la recette composée 50 ans plutôt. <br><br>
+
+                A travers cette recette, tu vas comprendre qui est Stewart Brand et son livre de cuisine : le Whole Earth Catalog dans lequel il a permis à des mondes hétérogènes de se rencontrer (imagine des scientifiques à côté d’hippies prenant du LSD) et de collaborer ensemble pour créer internet tel qu’on le connait aujourd’hui. <br><br>
+
+                Pour voir mon site c'est par <a href="https://marieliesse-desolages.github.io/stewartbrand/" target="_blank"><span class="liensite">ici</span></a>.
+
+            </p>
+          </article>
+
+          <div class="slider2">
+              <img class="slide2" src="../images/turner-m1.jpg" alt="Site Stewart Brand - 2017 © Marie-Liesse de Solages">
+              <img class="slide2" src="../images/turner-m2.jpg" alt="Site Stewart Brand - 2017 © Marie-Liesse de Solages">
+              <img class="slide2" src="../images/turner-1.jpg" alt="Site Stewart Brand - 2017 © Marie-Liesse de Solages">
+              <img class="slide2" src="../images/turner-m3.jpg" alt="Site Stewart Brand - 2017 © Marie-Liesse de Solages">
+              <img class="slide2" src="../images/turner-3t.jpg" alt="Site Stewart Brand - 2017 © Marie-Liesse de Solages">
+              <img class="slide2" src="../images/turner-4.jpg" alt="Site Stewart Brand - 2017 © Marie-Liesse de Solages">
+              <img class="slide2" src="../images/turner-5.jpg" alt="Site Stewart Brand - 2017 © Marie-Liesse de Solages">
+             
+
+              <div class="fleche" id="previous" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="fleche" id="next" onclick="plusDivs(1)">&#10095;</div>
+
+          </div>
+
+          <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+
+              function plusDivs(n) {
+              showDivs(slideIndex += n);
+              }
+
+              function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("slide2");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+              }
+              x[slideIndex-1].style.display = "block";
+              }
+          </script>
+
+    </section>
+
+  <footer>
+      <h5 class="footerfixe">
+        © Marie-Liesse de Solages  - codé avec amour avec HTML5 et CSS3 - 2018
+      </h5>
+
+  </footer>
+
+
+
+       </div>
+
+
+   </body>
+
+
+
+ </html>   

@@ -1,0 +1,776 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+/***************************** Fin du reset *********************************/
+
+
+@font-face{
+  font-family:gilroy;
+  src:url("../fonts/font-face.css");
+  font-weight:400;
+}
+  /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+html{
+  font-family:sans-serif;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%
+}
+
+
+/* 
+d8b   db  .d8b.  db    db 
+888o  88 d8' `8b 88    88 
+88V8o 88 88ooo88 Y8    8P 
+88 V8o88 88   88 `8b  d8' 
+88  V888 88   88  `8bd8'  
+VP   V8P YP   YP    YP    
+                           */
+
+
+
+
+/*
+ * Made by Erik Terwan
+ * 24th of November 2015
+ * All rights reserved
+ *
+ *
+ * If you are thinking of using this in
+ * production code, beware of the browser
+ * prefixes.
+ */
+
+body
+{
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family:gilroy,Helvetica,Roboto,Arial,sans-serif;
+    font-weight:400;
+  line-height:1.5;
+
+
+}
+
+a
+{
+  text-decoration: none;
+  color: black;
+  transition: color 0.3s ease;
+}
+
+a:hover
+{
+  color: tomato;
+}
+
+#menuToggle
+{
+  display: block;
+  position: fixed;
+  top: 30px;
+  right: 30px;
+  
+  z-index: 1;
+  
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+#menuToggle input
+{
+  display: block;
+  width: 40px;
+  height: 32px;
+  position: absolute;
+  top: -7px;
+  left: -5px;
+  
+  cursor: pointer;
+  
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
+  
+  -webkit-touch-callout: none;
+}
+
+/*
+ * Just a quick hamburger
+ */
+#menuToggle span
+{
+  display: block;
+  width: 33px;
+  height: 4px;
+  margin-bottom: 5px;
+  position: relative;
+  
+  background: white;
+  border-radius: 3px;
+  
+  z-index: 1;
+  
+  transform-origin: 4px 0px;
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+#menuToggle span:first-child
+{
+  transform-origin: 0% 0%;
+}
+
+#menuToggle span:nth-last-child(2)
+{
+  transform-origin: 0% 100%;
+}
+
+/* 
+ * Transform all the slices of hamburger
+ * into a crossmark.
+ */
+#menuToggle input:checked ~ span
+{
+  opacity: 1;
+  transform: rotate(45deg) translate(-2px, -1px);
+  background: #232323;
+}
+
+/*
+ * But let's hide the middle one.
+ */
+#menuToggle input:checked ~ span:nth-last-child(3)
+{
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+/*
+ * Ohyeah and the last one should go the other direction
+ */
+#menuToggle input:checked ~ span:nth-last-child(2)
+{
+  transform: rotate(-45deg) translate(0, -1px);
+}
+
+/*
+ * Make this absolute positioned
+ * at the top left of the screen
+ */
+#menu
+{
+  position: absolute;
+  width: 300px;
+
+  margin: -100px 0 0 -200px;
+  padding: 50px;
+  padding-top: 125px;
+  
+  background: #ededed;
+  list-style-type: none;
+  -webkit-font-smoothing: antialiased;
+  /* to stop flickering of text in safari */
+  
+  transform-origin: 0% 0%;
+  transform: translate(100%, 0%);
+  
+  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+#menu li
+{
+  padding: 10px 0;
+  font-size: 22px;
+}
+
+/*
+ * And let's slide it in from the left
+ */
+#menuToggle input:checked ~ ul
+{
+  transform: none;  
+}
+
+
+
+
+
+
+
+
+
+/************************ FIN NAV ***************************************/
+
+#home {
+    /* The image used */
+    background-image: url("../images/fond-logo.jpg");
+
+    /* Set a specific height */ 
+    min-height: 100vh; 
+    width: 100vw;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#home article nav{
+ top: 80vh;
+  left: 50vw;
+  position: absolute;
+}
+
+#fleche img{
+  width: 40px;
+  margin: auto;
+}
+
+
+#conteneur {
+	width: 980px;
+	margin: auto;
+  height: 3420px;
+}
+
+header {
+	width: 120%;
+  height: 11vh;
+  background-color: #ff6969;
+  position: fixed;
+  z-index: 3;
+  top : 0px;
+  left: 0px;
+  
+
+}
+
+#logo img {
+	width: 11vw;
+	display: inline-block;
+	vertical-align: top;
+  padding: 20px;
+  transition: width 0.3s ease;
+
+}
+
+#logo img:hover {
+  width: 12vw;
+}
+
+
+
+
+
+/*
+d8888b.  .d88b.  d8888b. d888888b d88888b  .d88b.  db      d888888b  .d88b.  .d8888. 
+88  `8D .8P  Y8. 88  `8D `~~88~~' 88'     .8P  Y8. 88        `88'   .8P  Y8. 88'  YP 
+88oodD' 88    88 88oobY'    88    88ooo   88    88 88         88    88    88 `8bo.   
+88~~~   88    88 88`8b      88    88~~~   88    88 88         88    88    88   `Y8b. 
+88      `8b  d8' 88 `88.    88    88      `8b  d8' 88booo.   .88.   `8b  d8' db   8D 
+88       `Y88P'  88   YD    YP    YP       `Y88P'  Y88888P Y888888P  `Y88P'  `8888Y' 
+*/
+
+#about {
+  width: 70vw;
+  margin: auto;
+  margin-top: -5vh;
+  height: 40vh;
+  padding-top: 150px;
+}
+
+#infocontact2 {
+      width: 85%;
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+
+#porfolio {
+  margin-top: 5vh;
+  margin-bottom: 10vh;
+}
+
+
+#articleallongé {
+	width: 968px;
+}
+
+#articleetire {
+}
+
+h1{
+	color: black;
+	font-family: 'gilroy', sans-serif;
+  font-weight: bold;
+	height: 100px;
+	font-size: 4em;
+	margin-top: -150px;
+  padding-top: 150px;
+  margin-bottom: 100px;
+}
+
+article {
+  width: 470px;
+    vertical-align: top;
+  display: inline-block;
+    height: 230px;
+     margin: auto;
+    vertical-align: top;
+    margin-bottom: 35px;
+    overflow: hidden;
+}
+
+
+
+.droite{
+  margin-left: 25px;
+}
+
+article a{
+    color: white;
+}
+
+article a:hover{
+    color: white;
+}
+
+.boitetexte{
+      z-index: 2;
+    position: relative;
+    height: 230px;
+     text-align: center;
+    border: 1px solid grey;
+    background-color: rgba(0,0,0,0.5);
+    opacity: 0;
+
+
+
+    -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out;
+
+}
+
+article .boitetexte h2 {
+    margin-top: 90px;
+    width: 100%;
+    font-size: 2em;
+    opacity: 100;
+    text-decoration: none;
+   /* transform: scale(1.1);*/
+    transition: all 300ms ease;
+    font-weight: bold;
+  }
+
+
+article a:hover .boitetexte{
+  opacity: 100;
+
+
+    -webkit-transition: opacity .5s ease-in-out;
+        -moz-transition: opacity .5s ease-in-out;
+        -ms-transition: opacity .5s ease-in-out;
+        -o-transition: opacity .5s ease-in-out;
+        transition: opacity .5s ease-in-out;
+}
+
+article figure{
+
+}
+
+
+article figure img{
+  width: 100%;
+
+  position: relative;
+  top: -230px;
+  z-index: 1;
+   transition: all 300ms ease;
+
+
+    -webkit-transition: transform .5s ease-in-out;
+        -moz-transition: transform .5s ease-in-out;
+        -ms-transition: transform .5s ease-in-out;
+        -o-transition: transform .5s ease-in-out;
+        transition: transform .5s ease-in-out;
+
+}
+
+article:hover figure img{
+  transform: scale(1.1);
+  position: relative;
+  visibility: ;
+
+      -webkit-transition: transform .5s ease-in-out;
+        -moz-transition: transform .5s ease-in-out;
+        -ms-transition: transform .5s ease-in-out;
+        -o-transition: transform .5s ease-in-out;
+        transition: transform .5s ease-in-out;
+}
+article:hover {
+  overflow: hidden;
+}
+
+figcaption {
+	display: none;
+}
+
+
+
+  figcaption:hover .selectworkcap {
+    display: block;
+  }
+
+
+
+
+/***
+ *     .o88b.  .d88b.  d8b   db d888888b  .d8b.   .o88b. d888888b 
+ *    d8P  Y8 .8P  Y8. 888o  88 `~~88~~' d8' `8b d8P  Y8 `~~88~~' 
+ *    8P      88    88 88V8o 88    88    88ooo88 8P         88    
+ *    8b      88    88 88 V8o88    88    88~~~88 8b         88    
+ *    Y8b  d8 `8b  d8' 88  V888    88    88   88 Y8b  d8    88    
+ *     `Y88P'  `Y88P'  VP   V8P    YP    YP   YP  `Y88P'    YP    
+ *                                                                
+ *                                                                
+ */
+
+
+
+#infocontact {
+      height: 200px;
+      width: 80%;
+      font-size: 2em;
+      font-weight: bold;
+      line-height: 1.5;
+    }
+
+#infocontact a{
+  text-decoration: underline;
+}
+
+.oust {
+  display:none;
+  }
+
+
+
+
+#zonecontact {
+  width: 100vw;
+  height: 90vh;
+  margin: auto;
+  background-color: #ff6969;
+  padding-top: 12vh;
+     font-weight:400;
+  line-height:1.5;
+
+}
+
+#textecontact {
+  width: 980px;
+  margin: auto;
+  color : white;
+   font-size: 1.4em;
+}
+
+
+div section  h3 {
+  font-weight: bold;
+  font-size: 2em;
+  margin-bottom: 4vh;
+}
+
+    
+
+div section article h4 {
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+
+.compétences{
+  width: 35vw;
+  height: 60vh;
+  display: inline-block;
+  position: absolute;
+}
+
+#articlecompetences {
+  width: 16vw;
+  position: relative;
+  height: 56vh;
+}
+
+#articlecompetences:hover{
+  overflow: scroll;
+}
+
+#articlecompetences2 {
+  width: 14vw;
+  position: relative;
+  height: 45vh;
+  padding-top: 0vh;
+  padding-right: 4vw;
+}
+
+#articlecompetences2:hover{
+  overflow: scroll;
+}
+
+#articleformations{
+  width: 28vw;
+  height: 70vh;
+    
+  position: absolute;
+  left: 55vw;
+}
+
+#articleformations:hover{
+  overflow: scroll;
+}
+
+article p a:hover{
+  color: black;
+}
+
+
+ footer h5 {
+    width: 400px;
+    height:30px;
+    font-size: 0.7em;
+    text-align:right;
+    font-weight: lighter;
+    left: -140px;
+        
+    
+    -webkit-transform:rotate(-90deg);
+    -moz-transform:rotate(-90deg);
+    -ms-transform:rotate(-90deg);
+    -o-transform:rotate(-90deg);
+}
+
+#footerportfolio {
+   position: relative;
+   bottom: -40vh;
+}
+
+
+
+
+/***
+ *    d8888b.  .d8b.   d888b  d88888b .d8888. 
+ *    88  `8D d8' `8b 88' Y8b 88'     88'  YP 
+ *    88oodD' 88ooo88 88      88ooooo `8bo.   
+ *    88~~~   88~~~88 88  ooo 88~~~~~   `Y8b. 
+ *    88      88   88 88. ~8~ 88.     db   8D 
+ *    88      YP   YP  Y888P  Y88888P `8888Y' 
+ *                                            
+ *                                            
+ */
+
+
+
+footer .footerfixe {
+     position: absolute; 
+     bottom: 30vh; 
+}
+
+.contenuprojet {
+  width: 25vw;
+  left: 7vw;
+  height: 60vh;
+  margin-top: 22vh;
+  font-size: 0.9em;
+  position: absolute;
+}
+
+.contenuprojet:hover {
+   overflow: scroll;
+}
+
+.titreprojet {
+  font-weight: bold;
+  font-size: 1.3em;
+  margin-bottom: 0vh;
+
+}
+
+
+
+/*******************************************/
+
+
+/*BOUTON PRECEDENT BOUTON PRECEDENT
+BOUTON PRECEDENT BOUTON PRECEDENT*/
+
+.projectbottom {
+  width: 25vw;
+  margin-top: 85.5vh;
+  font-size: 1.3em;
+  font-weight: bold;
+  left: 7vw;
+  position: absolute;
+
+}
+
+nav .projectbottom li{
+  display: inline-block;
+  width: 12vw; 
+}
+
+nav ul .nextproject li{
+  position: relative;
+  right: 0vw;
+  text-align: right;
+}
+
+
+
+
+
+.slider2 {
+    position: absolute;
+  
+    top: 25vh;
+    left: 35vw;
+    height: 65.5vh;
+    width: 60vw;
+   /* background-color: rgba(224, 224, 224, 0.459);*/
+}
+
+.slider2 img {
+    position: relative;
+    max-height: 65.5vh;
+    max-width: 60vw;
+    margin: auto;
+}
+
+
+.slider2 .fleche {
+    display: inline-block;
+    cursor: pointer;
+    color: rgb(68, 68, 68);
+    background-color: rgba(255, 255, 255, 0.49);
+    padding: 1vh;
+    opacity: 0;
+}
+
+
+.slider2 #next {
+    position: absolute;
+    top: 0vh;
+    right: 0vw;
+    height: 65vh;
+    width: 29vw;
+    cursor:url("../images/cursor-right.png") 4 0,auto;
+  }
+  
+
+.slider2 #previous {
+    position: absolute;
+    top: 0vh;
+    left: 0vw;
+    height: 65vh;
+    width: 29vw;
+    cursor:url("../images/cursor-left.png") 4 0,auto;
+}
+
+
+
+/*Info particulière à une page
+Info particulière à une page
+Info particulière à une page
+Info particulière à une page
+Info particulière à une page
+Info particulière à une page
+Info particulière à une page*/
+
+section article p a span {
+  color: black;
+  transition: color 0.3s ease;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+section article p a:hover span {
+  color: tomato;
+}
+
+section article p .bold{
+  font-weight: bold;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

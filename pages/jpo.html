@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+  	<head>
+    		<meta charset="UTF-8">
+    		<title> Journée Portes Ouvertes </title>
+    		<link rel="stylesheet" href="../styles/style.css">
+    		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    		
+  	</head>
+
+
+	<body>
+    	<div id="conteneur2">
+
+    	<header>
+    			<div id="logo">
+    					<a href="../index.html#porfolio"><img src="../images/marie-liesse_logoblanc.png" alt="Logo Marie-Liesse de Solages"></a>
+    			</div>
+
+    <!-- MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER  -->
+
+
+          			<!--    Made by Erik Terwan    -->
+          <!--   24th of November 2015   -->
+          <!--    All rights reserved    -->
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <a href="../index.html#home" class="js-scrollTo"><li>Home</li></a>
+                <a href="../index.html#about" class="js-scrollTo"><li>About</li></a>
+                <a href="../index.html#porfolio" class="js-scrollTo"><li>Porfolio</li></a>
+                <a href="../index.html#contact" class="js-scrollTo"><li>Contact</li></a>
+              </ul>
+            </div>
+          </nav>
+
+    <!-- MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER  -->
+
+
+
+    	 </header>
+
+     <!--:::::::::::::::::::::::::::::::::::::::::::::::
+::::::: BOUTONS PROJETS PRÉCÉDENT & SUIVANT :::::::
+::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+<!-- BOUTON PROJET PRÉCÉDENT -->
+<!-- <section id="previous-project">
+  <div id="previous-project-link">
+    <a href="portraitchinois.html">projet précedent</a>
+  </div>
+</section>   -->
+ 
+<nav>
+  <ul class="projectbottom">
+    <a href="rockwell.html"><li class="pastproject"> projet précédent </li></a>
+      <a href="pinocchio.html" class="nextproject"><li > projet suivant </li></a>
+  </ul>
+</nav>
+
+
+ 
+    <section>   	
+
+          <article class="contenuprojet">
+            <h3 class="titreprojet">
+              Journée Portes ouvertes
+            </h3> 
+
+            <p>
+                Janvier 2018 - Identité visuelle autour d'un évènement <br><br>
+                En collaboration avec Morgan Gomez et Julian Rosinel. <br><br>
+
+                Affiche sélectionnée pour représenter l'esprit de l'école <br>
+
+                Ce projet vise à s’emparer du principe de déformation et de mouvement autour du mot «Remake». En effet le mouvement Maker tente à déstructurer les codes déjà établis. Il créé un engouement vers la création, l’expérimentation, sans cesse plus rapide et intense. Faire, refaire, prendre, reprendre, déformer, effacer, créer. <br>
+                En alliant mouvement et déformation le mot s’articule et dynamise la composition et donne vie à une seconde version, une évolution du «Make».
+            </p>
+          </article>
+
+          <div class="slider2">
+              <img class="slide2" src="../images/jpo-affiche.jpg" alt="Journées Portes Ouvertes - Lycée Jacques Prévert- 2017 © Marie-Liesse de Solages">
+              <img class="slide2" src="../images/jpo-affiche2.jpg" alt="Journées Portes Ouvertes - Lycée Jacques Prévert- 2017 © Marie-Liesse de Solages">
+              <div class="fleche" id="previous" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="fleche" id="next" onclick="plusDivs(1)">&#10095;</div>
+
+          </div>
+
+          <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+
+              function plusDivs(n) {
+              showDivs(slideIndex += n);
+              }
+
+              function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("slide2");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+              }
+              x[slideIndex-1].style.display = "block";
+              }
+          </script>
+
+    </section>
+
+  <footer>
+      <h5 class="footerfixe">
+        © Marie-Liesse de Solages  - codé avec amour avec HTML5 et CSS3 - 2018
+      </h5>
+
+  </footer>
+
+
+
+       </div>
+
+
+   </body>
+
+
+
+ </html>   
