@@ -703,7 +703,7 @@ BOUTON PRECEDENT BOUTON PRECEDENT*/
 .projectbottom {
   width: 25vw;
   margin-top: 85.5vh;
-  font-size: 1.3em;
+  font-size: 1em;
   font-weight: bold;
   left: 7vw;
   position: absolute;
@@ -712,6 +712,11 @@ BOUTON PRECEDENT BOUTON PRECEDENT*/
 nav .projectbottom li{
   display: inline-block;
   width: 12vw; 
+  transition: color 1s ease-in-out;
+}
+
+nav .projectbottom li:hover{
+  color: tomato;
 }
 
 nav ul .nextproject li{
