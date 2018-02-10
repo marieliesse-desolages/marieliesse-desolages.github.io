@@ -667,6 +667,7 @@ article p a:hover{
 footer .footerfixe {
      position: absolute; 
      bottom: 30vh; 
+	display: none;
 }
 
 .contenuprojet {
