@@ -712,7 +712,7 @@ BOUTON PRECEDENT BOUTON PRECEDENT*/
 nav .projectbottom li{
   display: inline-block;
   width: 12vw; 
-  transition: color 1s ease-in-out;
+  transition: color 0.3s ease-in-out;
 }
 
 nav .projectbottom li:hover{
