@@ -54,11 +54,16 @@ table {
 /***************************** Fin du reset *********************************/
 
 
-/*@font-face{
-  font-family:gilroy;
-  src:url("../fonts/font-face.css");
-  font-weight:400;
-}*/
+/***
+ *    d88888b  .d88b.  d8b   db d888888b 
+ *    88'     .8P  Y8. 888o  88 `~~88~~' 
+ *    88ooo   88    88 88V8o 88    88    
+ *    88~~~   88    88 88 V8o88    88    
+ *    88      `8b  d8' 88  V888    88    
+ *    YP       `Y88P'  VP   V8P    YP    
+ *                                       
+ *                                       
+ */
 
 @font-face {
   font-family: 'gilroyextrabold';
@@ -135,11 +140,21 @@ a:hover
   position: fixed;
   top: 30px;
   right: 30px;
-  
+
+
   z-index: 1;
   
   -webkit-user-select: none;
   user-select: none;
+}
+
+@media all and (max-width:650px) {
+  #menuToggle  {
+/*  border: 1px solid black;*/
+  padding: 8px 8px 3px 8px;
+  border-radius: 6px;
+  background-color: #FF6969;
+  }
 }
 
 #menuToggle input
@@ -181,6 +196,9 @@ a:hover
               background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
               opacity 0.55s ease;
 }
+
+
+
 
 #menuToggle span:first-child
 {
@@ -227,13 +245,13 @@ a:hover
 #menu
 {
   position: absolute;
-  width: 300px;
+  width: 550px;
   font-family: 'gilroylight','Montserrat',Arial,sans-serif;
-  margin: -100px 0 0 -200px;
+  margin: -170px 0 0 -550px;
   padding: 50px;
   padding-top: 125px;
-  
-  background: #ededed;
+
+/*  background: #ededed;*/
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
   /* to stop flickering of text in safari */
@@ -241,13 +259,41 @@ a:hover
   transform-origin: 0% 0%;
   transform: translate(100%, 0%);
   
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  transition: transform 1s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+  
+@media all and (max-width:650px) {
+    #menu { 
+
+      width: 100vw;
+      margin: -100px 0 0 -100vw;
+      background: #ededed;
+      transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);  
+    }
+
 }
 
 #menu li
 {
-  padding: 10px 0;
+  padding: 10px 20px;
   font-size: 22px;
+  color: white;
+    display: inline-block;
+   /* border: 1px solid black;*/
+}
+
+@media all and (max-width:650px){
+  #menu li{
+    display: block;
+    color: black;
+    font-size: 30px;
+     width: 30vw;
+     margin-left: 35vw;
+    }
+
+  #menu li:hover{
+    color: tomato;
+  }  
 }
 
 /*
@@ -261,6 +307,299 @@ a:hover
 
 
 
+/***
+ *    .d8888. db    db  d888b  
+ *    88'  YP 88    88 88' Y8b 
+ *    `8bo.   Y8    8P 88      
+ *      `Y8b. `8b  d8' 88  ooo 
+ *    db   8D  `8bd8'  88. ~8~ 
+ *    `8888Y'    YP     Y888P  
+ *                             
+ *                             
+ */
+
+
+  /*.st0{fill:#FFFFFF;}
+  .st1{fill:#FF6969;}
+  .st2{fill:none;stroke:#FF6969;stroke-width:9;stroke-miterlimit:10;}*/
+
+  .st0{fill:#FF6969;}
+  .st1{fill:#FFFFFF;}
+  .st2{display:none;fill:#FFFFFF;}
+  .st3{fill:none;stroke:#FF6969;stroke-width:9;stroke-miterlimit:10;}
+
+/*.st0{fill:#1D1E1C;}
+  .st1{fill:#EA625E;}
+  .st2{fill:#FFFFFF;}
+  .st3{fill:none;stroke:#FFFFFF;stroke-width:9;stroke-miterlimit:10;}
+  .st4{fill:none;stroke:#FFFFFF;stroke-width:8;stroke-miterlimit:10;}
+*/
+.logosvg {
+  text-align: center;
+  /*display:flex;
+  flex-direction: column;
+  flex-flow: row wrap;*/
+}
+
+svg {
+  width: 80vw;
+  height: 60vh;
+  /*border: 1px solid black;*/
+  margin-top: 25vh;
+/*  margin: 0em 0 0 1em;*/
+transition: width 0.3 ease;
+transition: height 0.3 ease;
+/*  transition : all 1s ease;*/
+  justify-content: center;  
+}
+
+
+#groupe-logo{
+  transform-origin: 50% 50%;
+  fill:none;
+  stroke:#000000;
+  stroke-width:2;
+}
+
+#lettre-e-5:hover {
+  transform: rotate(360deg);
+}
+
+/*
+===========================================================
+ANIMATION
+===========================================================
+*/
+#lettre-l {
+  transform: scale(0);
+  transform-origin: 50% 50%;
+    animation: scale-y 1.7s ease-in-out 0.5s forwards;
+}
+
+#lettre-point-i-1, #lettre-point-i-2{
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: translateYbis 0.7s ease-in-out 0.5s forwards;
+  animation-delay: 1s;
+}
+
+#lettre-trait-i-1, #lettre-trait-i-2 {
+  transform: scale(0);
+  transform-origin: 50% 50%;
+    animation: scale-y 0.7s ease-in-out 0.5s forwards;
+    animation-delay: 1s;
+}
+
+
+#lettre-e-1, #lettre-e-3, #lettre-e-5 {
+  transform: scale(0);
+  transform-origin: 50% 100%;
+/*    animation: scale 1s ease-in-out 0.5s forwards;*/
+    animation: rotation 1.5s forwards linear;
+    animation-delay: 1.5s;
+}
+
+#lettre-e-2, #lettre-e-4 
+{
+  transform: scale(0);
+  transform-origin: 50% 100%;
+/*    animation: scale 1s ease-in-out 0.5s forwards;*/
+    animation: rotation 0.5s forwards linear;
+    animation-delay: 2.5s;
+  }
+
+#m, #lettre-g {
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  animation: scale 1s ease-in-out 0.5s forwards;
+  animation-delay: 2.7s;
+}
+
+#lettre-r-1, #lettre-o {
+  transform: scale(0);
+  transform-origin: 50% 50%;
+  animation: scale 0.7s ease-in-out 0.5s forwards;
+  animation-delay: 3s;
+}
+
+
+
+
+#cache-a {
+  transform-origin: 50% 100%;
+  animation: scale-ybas 1s ease-in-out 0.5s forwards;
+  animation-delay: 3.3s;
+}
+
+
+#cache-r {
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: scale-yhaut 1s ease-in-out 0.5s forwards;
+  animation-delay: 3.3s;
+}
+
+
+
+#trait-ad{
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: translateY 1.2s ease-in-out 0.5s forwards;
+  animation-delay: 4s;
+}
+
+#lettre-d-1, #lettre-a-1 {
+  transform: scale(0);
+  transform-origin: 50% 100%;
+  animation: translateX 1s ease-in-out 0.5s forwards;
+  animation-delay: 4.2s;
+}
+
+#cache-s-2b, #cache-s-3b {
+  transform-origin: 50% 50%;
+  fill:none;
+  stroke-width:9;
+  stroke-dasharray: 150; 
+  stroke-dashoffset: 0;
+    animation: dash 3s ease-in-out forwards;
+    animation-delay: 3s;
+}
+
+#cache-s-1b, #cache-s-4b{
+  transform-origin: 50% 50%;
+  fill:none;
+  stroke-width:9;
+  stroke-dasharray: 150; 
+  stroke-dashoffset: 0;
+    animation: dash 1.2s ease-in-out forwards;
+    animation-delay: 4s;
+}
+
+
+@keyframes scale-y {
+  0% {
+     transform: scaleY(0);
+  }
+  70%{
+    transform: scaleY(1.1);
+  }
+  85%{
+    transform: scaleY(0.9);
+  }
+  100%{
+    transform: scaleY(1);
+  }
+}
+
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: 150;
+  }
+}
+
+
+
+@keyframes rotation {
+  0% {
+    transform: scale(0) rotate(0deg);
+  }
+/*  70%{
+    transform: scale(1.1) rotate(310deg);
+  }
+  
+  85%{
+    transform: scale(0.9) rotate(345deg);
+  }*/
+  100%{
+    transform: scale(1) rotate(359deg);
+  }
+
+}
+
+
+@keyframes scale-ybas {
+  0% {
+     transform: scaleY(1);
+  }
+  100%{
+    transform: scaleY(0);
+  }
+}
+
+@keyframes scale-yhaut {
+  0% {
+     transform: scaleY(0);
+  }
+  100%{
+    transform: scaleY(1);
+  }
+}
+
+@keyframes scale {
+  0% {
+     transform: scale(0);
+  }
+  70%{
+    transform: scale(1.1);
+  }
+  85%{
+    transform: scale(0.9);
+  }
+  100%{
+    transform: scale(1);
+  }
+}
+
+@keyframes translateX {
+  from {
+    transform:translateX(0); 
+  }
+  to{
+    transform:translateX(-27px);
+  }
+}
+
+@keyframes translateY {
+  from {
+    transform:translateY(0); 
+  }
+  to{
+    transform:translateY(-345px);
+  }
+}
+
+@keyframes translateYbis {
+  0% {
+    transform:translateY(8px); 
+  }
+
+  70% {
+    transform:translateY(-4px)
+  }
+  85%{
+    transform:translateY(2px)
+  }
+  to{
+    transform:translateY(0px);
+  }
+}
+
+
+
+/********************************************************************/
+
+
+/***
+ *    db   db d88888b  .d8b.  d8888b. d88888b d8888b. 
+ *    88   88 88'     d8' `8b 88  `8D 88'     88  `8D 
+ *    88ooo88 88ooooo 88ooo88 88   88 88ooooo 88oobY' 
+ *    88~~~88 88~~~~~ 88~~~88 88   88 88~~~~~ 88`8b   
+ *    88   88 88.     88   88 88  .8D 88.     88 `88. 
+ *    YP   YP Y88888P YP   YP Y8888D' Y88888P 88   YD 
+ *                                                    
+ *                                                    
+ */
 
 
 
@@ -268,19 +607,25 @@ a:hover
 
 /************************ FIN NAV ***************************************/
 
-#home {
+/*#home {*/                       /********* Parallax **********/
     /* The image used */
-    background-image: url("../images/fond-logo.jpg");
-
+/*    background-image: url("../images/fond-logo.jpg");
+*/
     /* Set a specific height */ 
-    min-height: 100vh; 
-    width: 100vw;
+/*    min-height: 100vh; 
+    width: 100vw;*/
 
     /* Create the parallax scrolling effect */
-    background-attachment: fixed;
+/*    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}*/
+
+#home{
+  background-color: #ff6969;
+  width: 100vw;
+  height: 100vh;
 }
 
 #home article nav{
@@ -288,6 +633,7 @@ a:hover
   left: 50vw;
   position: absolute;
 }
+
 
 #fleche img{
   width: 40px;
@@ -301,32 +647,68 @@ a:hover
   height: 3420px;
 }
 
+@media all and (max-width:650px) {
+  #conteneur {
+    height: 5000px;
+    width: 100vw;
+  } 
+}
+
 header {
-	width: 120%;
+	width: 100vw;
   height: 11vh;
   background-color: #ff6969;
   position: fixed;
   z-index: 3;
   top : 0px;
   left: 0px;
-  
-
 }
 
+@media all and (max-width:650px){
+  header {
+    position: absolute;
+  } }
+
 #logo img {
-	width: 11vw;
+/*	width: 11vw;*/
+height: 7vh;
+position: relative;
 	display: inline-block;
 	vertical-align: top;
   padding: 20px;
-  transition: width 0.3s ease;
+  transition: width 0.3s ease; 
+}
 
+@media all and (max-width:650px){
+     #logo{
+
+}
 }
 
 #logo img:hover {
-  width: 12vw;
+ /* width: 12vw;*/
+ height: 8vh;
 }
 
+#logo2 img {
+/*  width: 11vw;*/
+height: 7vh;
+position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 20px;
+  transition: width 0.3s ease; 
+}
 
+@media all and (max-width:650px){
+     #logo2{
+display: none;
+}
+}
+
+#logo2 img:hover {
+  width: 12vw;
+}
 
 
 
@@ -345,7 +727,18 @@ d8888b.  .d88b.  d8888b. d888888b d88888b  .d88b.  db      d888888b  .d88b.  .d8
   margin-top: -5vh;
   height: 40vh;
   padding-top: 150px;
+
+
 }
+
+@media all and (max-width:650px) {
+    #about {
+        width: 100vw;
+        margin-left: 5vw;
+        margin-top: 0px;
+        height: 300px;
+    }
+  }
 
 #infocontact2 {
       width: 85%;
@@ -354,19 +747,36 @@ d8888b.  .d88b.  d8888b. d888888b d88888b  .d88b.  db      d888888b  .d88b.  .d8
       line-height: 1.5;
     }
 
+@media all and (max-width:650px) {
+  #infocontact2 {
+    font-size: 1.5em;
+  }
+}
 
 #porfolio {
 /*  margin-top: 50px;*/
   margin-bottom: 10px;
+
+
 }
 
+@media all and (max-width:650px) {
+  #porfolio {
+     margin-top: 150px;
+  }
+}
 
 #articleallongé {
 	width: 968px;
 }
 
-#articleetire {
-}
+@media all and (max-width:650px) {
+  #articleallongé {
+    width: 100vw;
+  }
+  }
+
+
 
 h1{
 	color: black;
@@ -377,6 +787,13 @@ h1{
 	margin-top: -150px;
   padding-top: 150px;
   margin-bottom: 100px;
+}
+
+@media all and (max-width:650px) {
+  h1 {
+    font-size: 2.5em;
+    margin-left: 5vw;
+  }
 }
 
 h2{
@@ -398,11 +815,25 @@ article {
     overflow: hidden;
 }
 
+@media all and (max-width:650px) {
+  article {
+    width: 100vw;
+    display: block;
+    margin-left: 0px;
+  }
+}
+
 
 
 .droite{
   margin-left: 25px;
 }
+
+@media all and (max-width:650px) {
+  .droite {
+    margin-left: 0px;
+  }
+  }
 
 article a{
     color: white;
@@ -436,6 +867,14 @@ article a:hover{
 
 }
 
+@media all and (max-width:650px) {
+  .boitetexte{
+      opacity: 1;
+
+      background-color: rgba(0,0,0,0.3); 
+    }
+  }
+
 article .boitetexte h2 {
     margin-top: 90px;
     width: 100%;
@@ -449,7 +888,7 @@ article .boitetexte h2 {
 
 
 article a:hover .boitetexte{
-  opacity: 100;
+  opacity: 1;
 
 
     -webkit-transition: opacity .5s ease-in-out;
@@ -457,10 +896,6 @@ article a:hover .boitetexte{
         -ms-transition: opacity .5s ease-in-out;
         -o-transition: opacity .5s ease-in-out;
         transition: opacity .5s ease-in-out;
-}
-
-article figure{
-
 }
 
 
@@ -530,6 +965,17 @@ figcaption {
       line-height: 1.5;
     }
 
+@media all and (max-width:650px) {
+    #infocontact {
+        width: 85vw;
+        margin-left: 5vw;
+        margin-top: -50px;
+        height: 300px;
+        font-size: 1.5em;
+    }
+  }
+
+
 #infocontact a{
   text-decoration: underline;
 }
@@ -549,8 +995,13 @@ figcaption {
   padding-top: 12vh;
      font-weight:400;
   line-height:1.5;
-
 }
+
+@media all and (max-width:650px) {
+  #zonecontact {
+    height: 1000px;
+  }
+  }
 
 #textecontact {
   width: 980px;
@@ -559,6 +1010,12 @@ figcaption {
    font-size: 1.4em;
 }
 
+@media all and (max-width:650px) {
+  #textecontact {
+    width: 100vw;
+    font-size: 1em;
+  }
+  }
 
 div section  h3 {
   font-weight: bold;
@@ -566,7 +1023,6 @@ div section  h3 {
   margin-bottom: 4vh;
 }
 
-    
 
 div section article h4 {
   font-weight: bold;
@@ -581,6 +1037,15 @@ div section article h4 {
   position: absolute;
 }
 
+@media all and (max-width:650px) {
+  .compétences {
+    width: 100vw;
+    margin-left: 5vw;
+    display: block;
+    height: 500px;
+  }
+  }
+
 .compétences article p{
 	  font-family: 'gilroylight','Montserrat',Arial,sans-serif;
 }
@@ -590,6 +1055,13 @@ div section article h4 {
   position: relative;
   height: 56vh;
 }
+
+@media all and (max-width:650px) {
+  #articlecompetences {
+    width: 100vw;
+     height: 420px;
+  }
+  }
 
 #articlecompetences:hover{
 /*  overflow: scroll;*/
@@ -603,6 +1075,14 @@ div section article h4 {
   padding-right: 4vw;
 }
 
+@media all and (max-width:650px) {
+  #articlecompetences2 {
+    width: 100vw;
+margin-top: -170px;
+ height: 200px;
+  }
+  }
+
 #articlecompetences2:hover{
 /*  overflow: scroll;*/
 }
@@ -614,6 +1094,15 @@ div section article h4 {
   position: absolute;
   left: 55vw;
 }
+
+@media all and (max-width:650px) {
+  #articleformations {
+    width: 100vw;
+    left: 5vw;
+    margin-top: 560px;
+    height: 380px;
+  }
+  }
 
 #articleformations:hover{
  /* overflow: scroll;*/
@@ -627,7 +1116,7 @@ article p a:hover{
 	  font-family: 'gilroylight','Montserrat',Arial,sans-serif;
 }
 
- footer h5 {
+ h5 {
     width: 400px;
     height:30px;
     font-size: 0.7em;
@@ -643,11 +1132,26 @@ article p a:hover{
     -o-transform:rotate(-90deg);
 }
 
+
+
 #footerportfolio {
    position: relative;
    bottom: -40vh;
 }
 
+@media all and (max-width:650px) {
+  #footerportfolio {
+    left: 3vw;
+    margin-top: 920px;
+    bottom: 0px;
+    font-size: 0.6em;
+    width: 85vw;
+    -webkit-transform:rotate(0deg);
+    -moz-transform:rotate(0deg);
+    -ms-transform:rotate(0deg);
+    -o-transform:rotate(0deg);
+  }
+  }
 
 
 
@@ -667,7 +1171,7 @@ article p a:hover{
 footer .footerfixe {
      position: absolute; 
      bottom: 30vh; 
-	display: none;
+     display: none;
 }
 
 .contenuprojet {
@@ -677,20 +1181,35 @@ footer .footerfixe {
   margin-top: 22vh;
   font-size: 0.9em;
   position: absolute;
+/*  border: 1px solid blue;*/
   font-family: 'gilroylight', 'Roboto', Arial, sans-serif;
 }
-/*
-.contenuprojet:hover {
+
+        @media all and (max-width:650px) {
+          .contenuprojet {
+            width: 90vw;
+            height: 300px;
+            left: 5vw;
+            margin-top: 120px;
+            overflow: scroll;
+          }
+        }
+
+/*.contenuprojet:hover {
    overflow: scroll;
-}
-*/
+}*/
 
 .titreprojet {
   font-weight: bold;
   font-size: 1.3em;
   margin-bottom: 0vh;
-font-family: 'gilroyextrabold','Montserrat',Arial Black,sans-serif;
+/*   border: 1px solid red;*/
 }
+
+        @media all and (max-width:650px) {
+          .titreprojet {
+          }
+        }
 
 
 
@@ -707,13 +1226,29 @@ BOUTON PRECEDENT BOUTON PRECEDENT*/
   font-weight: bold;
   left: 7vw;
   position: absolute;
+/*   border: 1px solid green;*/
 }
+
+        @media all and (max-width:650px) {
+          .projectbottom {
+            margin-top: 820px;
+            width: 85vw;
+            margin-bottom: 40px;
+          }
+        }
 
 nav .projectbottom li{
   display: inline-block;
   width: 12vw; 
-  transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease;
 }
+
+        @media all and (max-width:650px) {
+          nav .projectbottom li{
+            width: 41vw;
+          /*  border: 1px solid orange;*/
+          }
+        }
 
 nav .projectbottom li:hover{
   color: tomato;
@@ -726,12 +1261,14 @@ nav ul .nextproject li{
 }
 
 
-
+.titreprojet {
+	font-family: 'gilroyextrabold','Montserrat',Arial Black,sans-serif;
+}
 
 
 .slider2 {
     position: absolute;
-  
+/*   border: 1px solid pink;*/
     top: 25vh;
     left: 35vw;
     height: 65.5vh;
@@ -739,12 +1276,29 @@ nav ul .nextproject li{
    /* background-color: rgba(224, 224, 224, 0.459);*/
 }
 
+        @media all and (max-width:650px) {
+          .slider2 {
+            width: 100vw;
+            top: 420px;
+            left: 0vw;
+            height: 400px;
+          }
+        }
+
 .slider2 img {
     position: relative;
     max-height: 65.5vh;
     max-width: 60vw;
     margin: auto;
+     /*border: 1px solid black;*/
 }
+
+          @media all and (max-width:650px) {
+            .slider2 img {
+              max-height: 350px;
+              max-width: 100vw;
+            }
+          }
 
 
 .slider2 .fleche {
@@ -756,6 +1310,17 @@ nav ul .nextproject li{
     opacity: 0;
 }
 
+            @media all and (max-width:650px) {
+            .slider2 .fleche {
+              opacity: 1;
+              background-color: rgba(255, 255, 255, 0);
+              color: rgb(68, 68, 68);
+              font-size: 2.5em;
+              padding-top: 0px;
+              /*border: 1px solid blue;*/
+                          }
+          }
+
 
 .slider2 #next {
     position: absolute;
@@ -765,6 +1330,15 @@ nav ul .nextproject li{
     width: 29vw;
     cursor:url("../images/cursor-right.png") 4 0,auto;
   }
+
+            @media all and (max-width:650px) {
+            .slider2 #next {
+              height: 50px;
+            /*  top: -50px;*/
+              width: 20px;
+              right: 5vw;
+            }
+          }
   
 
 .slider2 #previous {
@@ -776,7 +1350,14 @@ nav ul .nextproject li{
     cursor:url("../images/cursor-left.png") 4 0,auto;
 }
 
-
+          @media all and (max-width:650px) {
+            .slider2 #previous {
+              height: 50px;
+            /*  margin-top: -50px;*/
+              width: 20px;
+              left: 5vw;
+            }
+          }
 
 /*Info particulière à une page
 Info particulière à une page
@@ -791,6 +1372,7 @@ section article p a span {
   transition: color 0.3s ease;
   font-weight: bold;
   text-decoration: underline;
+
 }
 
 section article p a:hover span {
