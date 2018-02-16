@@ -172,8 +172,8 @@ a:hover
   width: 40px;
   height: 32px;
   position: absolute;
-  top: -7px;
-  left: -5px;
+ /* top: -7px;
+  left: -5px;*/
   
   cursor: pointer;
   
@@ -299,6 +299,7 @@ a:hover
   font-size: 22px;
   color: white;
     display: inline-block;
+     transition: color 0.3s ease;
    /* border: 1px solid black;*/
 }
 
@@ -324,10 +325,21 @@ a:hover
  }  
 
   #menu li:hover{
-    color: tomato;
+    color: black;
   }  
 
+  @media all and (max-width:650px){
+  #menu li:hover{
+    color: tomato;
+}
+}
 
+
+@media all and (max-device-width:450px) { 
+ #menu li{
+    color: tomato;
+}
+} 
 /*
  * And let's slide it in from the left
  */
@@ -904,6 +916,7 @@ article {
 @media all and (max-width:650px) {
   article {
     width: 100vw;
+ 		   /*height: 50vh;*/
     display: block;
     margin-left: 0px;
   }
@@ -912,6 +925,7 @@ article {
   @media all and (max-device-width:450px) {
   article {
     width: 100vw;
+		   /* height: 50vh;*/
     display: block;
     margin-left: 0px;
   }
@@ -968,7 +982,7 @@ article a:hover{
 @media all and (max-width:650px) {
   .boitetexte{
       opacity: 1;
-
+ 				/*height: 50vh;*/
       background-color: rgba(0,0,0,0.3); 
     }
   }
@@ -976,7 +990,7 @@ article a:hover{
   @media all and (max-device-width:450px) {
   .boitetexte{
       opacity: 1;
-
+      			/*height: 50vh;*/
       background-color: rgba(0,0,0,0.3); 
     }
   }
@@ -1414,7 +1428,7 @@ BOUTON PRECEDENT BOUTON PRECEDENT*/
 
         @media all and (max-width:650px) {
           .projectbottom {
-            margin-top: 820px;
+            margin-top: 800px;
             width: 85vw;
             margin-bottom: 40px;
           }
@@ -1422,7 +1436,7 @@ BOUTON PRECEDENT BOUTON PRECEDENT*/
 
     @media all and (max-device-width:450px) {
           .projectbottom {
-            margin-top: 820px;
+            margin-top: 800px;
             width: 85vw;
             margin-bottom: 40px;
           }
@@ -1437,7 +1451,7 @@ nav .projectbottom li{
         @media all and (max-width:650px) {
           nav .projectbottom li{
             width: 41vw;
-          /*  border: 1px solid orange;*/
+            /*border: 1px solid orange;*/
           }
         }
 
@@ -1466,7 +1480,7 @@ nav ul .nextproject li{
 
 .slider2 {
     position: absolute;
-/*   border: 1px solid pink;*/
+   /*border: 1px solid pink;*/
     top: 25vh;
     left: 35vw;
     height: 65.5vh;
@@ -1477,7 +1491,7 @@ nav ul .nextproject li{
         @media all and (max-width:650px) {
           .slider2 {
             width: 100vw;
-            top: 420px;
+            top: 370px;
             left: 0vw;
             height: 400px;
           }
@@ -1486,7 +1500,7 @@ nav ul .nextproject li{
     @media all and (max-device-width:450px) {
           .slider2 {
             width: 100vw;
-            top: 420px;
+            top: 370px;
             left: 0vw;
             height: 400px;
           }
@@ -1497,19 +1511,19 @@ nav ul .nextproject li{
     max-height: 65.5vh;
     max-width: 60vw;
     margin: auto;
-     /*border: 1px solid black;*/
+ /*    border: 1px solid black;*/
 }
 
           @media all and (max-width:650px) {
             .slider2 img {
-              max-height: 350px;
+              max-height: 400px;
               max-width: 100vw;
             }
           }
 
     @media all and (max-device-width:450px) {
             .slider2 img {
-              max-height: 350px;
+              max-height: 400px;
               max-width: 100vw;
             }
           }
@@ -1518,16 +1532,20 @@ nav ul .nextproject li{
     display: inline-block;
     cursor: pointer;
     color: rgb(68, 68, 68);
-    background-color: rgba(255, 255, 255, 0.49);
-    padding: 1vh;
-    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.89);
+    padding-left: 1vw;
+    padding-right: 1vw;
+        opacity: 1;
+    color: #ff6969;
+    font-size: 3em;
+    
 }
 
             @media all and (max-width:650px) {
             .slider2 .fleche {
               opacity: 1;
               background-color: rgba(255, 255, 255, 0);
-              color: rgb(68, 68, 68);
+              /*color: rgb(68, 68, 68);*/
               font-size: 2.5em;
               padding-top: 0px;
               /*border: 1px solid blue;*/
@@ -1538,7 +1556,7 @@ nav ul .nextproject li{
             .slider2 .fleche {
               opacity: 1;
               background-color: rgba(255, 255, 255, 0);
-              color: rgb(68, 68, 68);
+              /*color: rgb(68, 68, 68);*/
               font-size: 2.5em;
               padding-top: 0px;
               /*border: 1px solid blue;*/
@@ -1547,54 +1565,54 @@ nav ul .nextproject li{
 
 .slider2 #next {
     position: absolute;
-    top: 0vh;
+    top: 25vh;
     right: 0vw;
-    height: 65vh;
-    width: 29vw;
-    cursor:url("../images/cursor-right.png") 4 0,auto;
+/*    height: 65vh;
+    width: 9vw;*/
+/*    cursor:url("../images/cursor-right.png") 4 0,auto;*/
   }
 
             @media all and (max-width:650px) {
             .slider2 #next {
               height: 50px;
-            /*  top: -50px;*/
+            top: 350px;
               width: 20px;
-              right: 5vw;
+              right: 7vw;
             }
           }
  
      @media all and (max-device-width:450px) {
              .slider2 #next {
               height: 50px;
-            /*  top: -50px;*/
+              top: 350px;
               width: 20px;
-              right: 5vw;
+              right: 7vw;
             }
           }
 
 .slider2 #previous {
     position: absolute;
-    top: 0vh;
+    top: 25vh;
     left: 0vw;
-    height: 65vh;
-    width: 29vw;
-    cursor:url("../images/cursor-left.png") 4 0,auto;
+/*    height: 65vh;
+    width: 9vw;*/
+/*    cursor:url("../images/cursor-left.png") 4 0,auto;*/
 }
 
           @media all and (max-width:650px) {
             .slider2 #previous {
               height: 50px;
-            /*  margin-top: -50px;*/
+              top: 350px;
               width: 20px;
-              left: 5vw;
+              left: 7vw;
             }
           }
      @media all and (max-device-width:450px) {
            .slider2 #previous {
               height: 50px;
-            /*  margin-top: -50px;*/
+            top: 350px;
               width: 20px;
-              left: 5vw;
+              left: 7vw;
             }
           }
 
@@ -1618,13 +1636,38 @@ section article p a:hover span {
   color: tomato;
 }
 
-section article p .bold{
-  font-weight: bold;
+/*section article p .bold{
+      font-family: 'gilroyextrabold','Montserrat',Arial Black,sans-serif;
+font-weight: bold;
+}*/
+
+.liensite {
+    font-family: 'gilroyextrabold','Montserrat',Arial Black,sans-serif;
+
 }
 
 
+.slider2 iframe {
+    position: relative;
+    max-height: 65.5vh;
+    max-width: 60vw;
+    margin: auto;
+     /*border: 1px solid black;*/
+}
 
+          @media all and (max-width:650px) {
+            .slider2 iframe {
+              max-height: 350px;
+              max-width: 100vw;
+            }
+          }
 
+    @media all and (max-device-width:450px) {
+            .slider2 iframe {
+              max-height: 350px;
+              max-width: 100vw;
+            }
+          }
 
 
 
