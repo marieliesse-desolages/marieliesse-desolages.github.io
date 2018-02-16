@@ -1650,8 +1650,8 @@ font-weight: bold;
 
 .slider2 iframe {
     position: relative;
-    max-height: 65.5vh;
-    max-width: 60vw;
+    height: 65.5vh;
+    width: 60vw;
     margin: auto;
      /*border: 1px solid black;*/
 }
