@@ -771,7 +771,8 @@ display: none;
 }
 
 #logo2 img:hover {
-  width: 12vw;
+   height: 8vh;
+
 }
 
 
