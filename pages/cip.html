@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="fr">
+  	<head>
+    		<meta charset="UTF-8">
+    		<title> Cinémas Indépendants Parisiens </title>
+    		<link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/favicon.png">    		
+  	</head>
+
+
+	<body>
+    	<div id="conteneur2">
+
+    	<header>
+    			<div id="logo">
+    					<a href="../index.html#porfolio"><img src="../images/marie-liesse_logo.png" alt="Logo Marie-Liesse de Solages"></a>
+    			</div>
+
+    <!-- MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER  -->
+
+
+          			<!--    Made by Erik Terwan    -->
+          <!--   24th of November 2015   -->
+          <!--    All rights reserved    -->
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <a href="../index.html#home" class="js-scrollTo"><li>Home</li></a>
+                <a href="../index.html#about" class="js-scrollTo"><li>About</li></a>
+                <a href="../index.html#porfolio" class="js-scrollTo"><li>Porfolio</li></a>
+                <a href="../index.html#contact" class="js-scrollTo"><li>Contact</li></a>
+              </ul>
+            </div>
+          </nav>
+
+    <!-- MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER  -->
+
+
+
+    	 </header>
+
+     <!--:::::::::::::::::::::::::::::::::::::::::::::::
+::::::: BOUTONS PROJETS PRÉCÉDENT & SUIVANT :::::::
+::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+ 
+<nav>
+  <ul class="projectbottom">
+    <a href="stewartbrand.html"><li class="pastproject"><< projet précédent </li></a>
+      <a href="souk.html" class="nextproject"><li > projet suivant >></li></a>
+  </ul>
+</nav>
+
+
+ 
+    <section>   	
+
+          <article class="contenuprojet">
+            <h3 class="titreprojet">
+              Cinémas Indépendants Parisiens
+            </h3> 
+
+            <p>Avril 2018 - Bande Annonce <br>
+              Partenariat 
+               <br><br>
+
+              Réalisation d’une bande annonce pour la programmation Enfance de l’Art des Cinémas Indépendants Parisiens. Elle est réalisée à partir des films présents lors de la programmation en binôme avec Sébastien Petit. 
+                
+            </p>
+          </article>
+
+          <div class="slider2">
+    
+              <iframe src="https://player.vimeo.com/video/340166748" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+                          
+             
+
+ <!--              <div class="fleche" id="previous" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="fleche" id="next" onclick="plusDivs(1)">&#10095;</div>
+ -->
+          </div>
+
+          <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+
+              function plusDivs(n) {
+              showDivs(slideIndex += n);
+              }
+
+              function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("slide2");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+              }
+              x[slideIndex-1].style.display = "block";
+              }
+          </script>
+
+    </section>
+
+  <footer>
+      <h5 class="footerfixe">
+        © Marie-Liesse de Solages  - codé avec amour avec HTML5 et CSS3 - 2019
+      </h5>
+
+  </footer>
+
+
+
+       </div>
+
+
+   </body>
+
+
+
+ </html>   

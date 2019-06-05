@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="fr">
+  	<head>
+    		<meta charset="UTF-8">
+    		<title> Survivance d'une œuvre </title>
+    		<link rel="stylesheet" href="../styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/favicon.png">    		
+  	</head>
+
+
+	<body>
+    	<div id="conteneur2">
+
+    	<header>
+    			<div id="logo">
+    					<a href="../index.html#porfolio"><img src="../images/marie-liesse_logo.png" alt="Logo Marie-Liesse de Solages"></a>
+    			</div>
+
+    <!-- MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER  -->
+
+
+          			<!--    Made by Erik Terwan    -->
+          <!--   24th of November 2015   -->
+          <!--    All rights reserved    -->
+          <nav role="navigation">
+            <div id="menuToggle">
+              <!--
+              A fake / hidden checkbox is used as click reciever,
+              so you can use the :checked selector on it.
+              -->
+              <input type="checkbox" />
+              
+              <!--
+              Some spans to act as a hamburger.
+              
+              They are acting like a real hamburger,
+              not that McDonalds stuff.
+              -->
+              <span></span>
+              <span></span>
+              <span></span>
+              
+              <!--
+              Too bad the menu has to be inside of the button
+              but hey, it's pure CSS magic.
+              -->
+              <ul id="menu">
+                <a href="../index.html#home" class="js-scrollTo"><li>Home</li></a>
+                <a href="../index.html#about" class="js-scrollTo"><li>About</li></a>
+                <a href="../index.html#porfolio" class="js-scrollTo"><li>Porfolio</li></a>
+                <a href="../index.html#contact" class="js-scrollTo"><li>Contact</li></a>
+              </ul>
+            </div>
+          </nav>
+
+    <!-- MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER 
+    MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER - MENU BURGER  -->
+
+
+
+    	 </header>
+
+     <!--:::::::::::::::::::::::::::::::::::::::::::::::
+::::::: BOUTONS PROJETS PRÉCÉDENT & SUIVANT :::::::
+::::::::::::::::::::::::::::::::::::::::::::::::-->
+
+<!-- BOUTON PROJET PRÉCÉDENT -->
+<!-- <section id="previous-project">
+  <div id="previous-project-link">
+    <a href="portraitchinois.html">projet précedent</a>
+  </div>
+</section>   -->
+ 
+<nav>
+  <ul class="projectbottom">
+    <a href="mistergreg.html"><li class="pastproject"> << projet précédent </li></a>
+      <a href="dnmade.html" class="nextproject"><li > projet suivant >> </li></a>
+  </ul>
+</nav>
+
+
+ 
+    <section>   	
+
+          <article class="contenuprojet">
+            <h3 class="titreprojet">
+              Survivance d'une œuvre
+            </h3> 
+
+            <p>
+                    
+              Janvier 2019 - Édition <br> <br>
+
+
+              Comment une œuvre peut-elle survivre au cours des siècles ? Quelle peut être l’influence de sa survivance dans notre façon de faire et de voir les œuvres ? Comment peut-elle agir en nous de façon plus ou moins consciente ? Quelle est la temporalité d’une œuvre ? De quelle façon une œuvre peut perdurer dans le temps ? <br><br>
+              En s’appuyant sur l’étude de cas de La Naissance de Vénus de Botticelli, on peut analyser l’œuvre, les inspirations de l’artiste qui ont influencé la conception de cette peinture et l’héritage de ce tableau dans les siècles qui ont suivi jusqu’à aujourd’hui. À partir de ces réflexions, nous allons comprendre et expliquer la notion de survivance en nous appuyant de philosophes et de théoriciens de l’art comme Georges Didi-Huberman, Aby Warburg, Kandinsky ou encore Daniel Arasse.
+            </p>
+          </article>
+
+          <div class="slider2">
+              <img class="slide2" src="../images/survivance-01.jpg" alt="Survivance d'une œuvre - Mémoire - 2019 © Marie-Liesse de Solages">
+              <img class="slide2" src="../images/survivance-02.jpg" alt="Survivance d'une œuvre - Mémoire - 2019 © Marie-Liesse de Solages">
+              <img class="slide2" src="../images/survivance-03.jpg" alt="Survivance d'une œuvre - Mémoire - 2019 © Marie-Liesse de Solages">
+              <img class="slide2" src="../images/survivance-04.jpg" alt="Survivance d'une œuvre - Mémoire - 2019 © Marie-Liesse de Solages">
+              <img class="slide2" src="../images/survivance-05.jpg" alt="Survivance d'une œuvre - Mémoire - 2019 © Marie-Liesse de Solages">
+              <img class="slide2" src="../images/survivance-06.jpg" alt="Survivance d'une œuvre - Mémoire - 2019 © Marie-Liesse de Solages">
+
+             
+
+              <div class="fleche" id="previous" onclick="plusDivs(-1)">&#10094;</div>
+              <div class="fleche" id="next" onclick="plusDivs(1)">&#10095;</div>
+
+          </div>
+
+          <script>
+              var slideIndex = 1;
+              showDivs(slideIndex);
+
+              function plusDivs(n) {
+              showDivs(slideIndex += n);
+              }
+
+              function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("slide2");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none";
+              }
+              x[slideIndex-1].style.display = "block";
+              }
+          </script>
+
+    </section>
+
+  <footer>
+      <h5 class="footerfixe">
+        © Marie-Liesse de Solages  - codé avec amour avec HTML5 et CSS3 - 2019
+      </h5>
+
+  </footer>
+
+
+
+       </div>
+
+
+   </body>
+
+
+
+ </html>   
