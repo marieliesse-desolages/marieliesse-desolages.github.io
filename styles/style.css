@@ -1428,7 +1428,6 @@ footer .footerfixe {
             left: 5vw;
             margin-top: 120px;
             overflow: scroll;
-								border : 1px solid red;
           }
         }
 
@@ -1439,8 +1438,7 @@ footer .footerfixe {
             left: 5vw;
             margin-top: 120px;
             overflow: scroll;
-		  								border : 1px solid red;
-          }
+		}
         }
 
     @media all and (max-device-width:450px) {
@@ -1450,7 +1448,6 @@ footer .footerfixe {
             left: 5vw;
             margin-top: 120px;
             overflow: scroll;
-	  								border : 1px solid red;
           }
         }
 
@@ -1572,7 +1569,6 @@ nav ul .nextproject li{
             top: 420px;
             left: 0vw;
             height: 400px;
-		  								border : 1px solid blue;
           }
         }
         @media all and (max-width:650px) {
@@ -1581,7 +1577,6 @@ nav ul .nextproject li{
             top: 420px;
             left: 0vw;
             height: 400px;
-		  								border : 1px solid blue;
           }
         }
 
@@ -1591,7 +1586,6 @@ nav ul .nextproject li{
             top: 420px;
             left: 0vw;
             height: 400px;
-		  								border : 1px solid blue;
           }
         }
 
