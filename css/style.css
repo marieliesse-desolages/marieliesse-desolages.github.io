@@ -547,7 +547,7 @@ VP   V8P YP   YP    YP
 @media all and (max-width: 961px) {
   #menuToggle {
     /* background: lightblue; */
-    top: 88vh;
+    top: 85vh;
     left: 80vw;
     padding: 12px;
     border-radius: 50%;
@@ -898,7 +898,7 @@ margin-top:-500px
 }
 
 .contenu .introprojet {
-  height: 210px;
+  height: 230px;
   cursor: auto;
   animation: degrade 7s infinite;
   transition: all ease 2s;

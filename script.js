@@ -120,7 +120,7 @@ function loadProject(projectElm, ignoreHistory) {
   openModal();
   showDivs(slideIndex);
   glide = new Glide("#modal-content .glide", {
-    dragThreshold: 20,
+    dragThreshold: 10,
     gap: 0,
     type: "carousel",
   }).mount();
