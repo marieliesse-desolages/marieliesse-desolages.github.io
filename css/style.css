@@ -211,7 +211,7 @@ body {
 
 svg {
   width: 80vw;
-  height: 60vh;
+  height: 50vh;
   /*border: 1px solid black;*/
   margin-top: 25vh;
   /*  margin: 0em 0 0 1em;*/
@@ -547,7 +547,7 @@ VP   V8P YP   YP    YP
 @media all and (max-width: 961px) {
   #menuToggle {
     /* background: lightblue; */
-    top: 85vh;
+    top: 80vh;
     left: 80vw;
     padding: 12px;
     border-radius: 50%;
@@ -1310,7 +1310,7 @@ a {
     padding: 4vw;
     margin-top: 2em;
     padding-right: 20vw;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
   }
 }
 
