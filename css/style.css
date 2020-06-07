@@ -852,7 +852,7 @@ d8888b.  .d88b.  d8888b. d888888b d88888b  .d88b.  db      d888888b  .d88b.  .d8
 
 @media all and (max-width: 961px) {
   .projects-wrappers {
-    position: sticky;
+    position: fixed;
     width: 100%;
     right: 0;
     height: 100%;
@@ -1218,7 +1218,9 @@ figcaption {
 @media all and (max-width: 481px) {
   .fleche {
     font-size: 70px;
-    width: 28px;
+    width: 35px;
+    margin-right: 15px;
+    margin-left: 15px;
     /* border: 1px solid blue; */
   }
 }
@@ -1244,6 +1246,12 @@ figcaption {
   }
 }
 
+@media all and (max-width: 481px) {
+  #next {
+    right: 35px;
+  }
+}
+
 #previous {
   margin-right: 1em;
   /* left: 18vw;
@@ -1255,6 +1263,12 @@ figcaption {
 @media all and (max-width: 961px) {
   #previous {
     left: 20px;
+  }
+}
+
+@media all and (max-width: 481px) {
+  #previous {
+    left: 35px;
   }
 }
 
@@ -1382,8 +1396,11 @@ a {
 
 @media all and (max-width: 481px) {
   .flexwrapper {
-    padding-right: 5vw;
+    padding: 20px;
+    margin-top: 50px;
+    padding-right: 65px;
     margin-bottom: 150px;
+    /* border: 1px solid coral; */
   }
 }
 
